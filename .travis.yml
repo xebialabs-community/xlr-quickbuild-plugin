@@ -1,0 +1,24 @@
+language: java
+sudo: false
+notifications:
+  slack:
+    secure: WzdS5sSSQziwbZwqW8nCddRGC8SSrgcPyVn9NbV2MOkqa4mFawQOL05CCOc0RfV7otCCqxsDqXAehuyKzEVA8VrQ1g10Eelppbnv9WxDYzIj1M2MPmyo4RzHK6+aw0KRIujufgYQdxit+N/J2xATnUy+3hiXBQprCnIGXYaNk2w=
+  hipchat:
+    rooms:
+      secure: A0rtcc5iWVOiKodiYxX8DzNn777k2boUWILXtfEKKXqHzxENYaj5EHeMT+kC+2F/rnnjS79fMFD9VU4d/dbjiQH4wzHMPA5gBGpOpb+q0zbLTxt4sYmn+9HqVoIu774ZSBkX1fh5y/MM6qrjUJbPLMuBylM88PhYu95hGL7TW1w=
+deploy:
+  provider: releases
+  api_key:
+    secure: MDy/R3WGvW3rGg9YEEBzGkZtKMK8EEwR/+xoX2ynXrEKGGiXEmCLeJ1i+X5v1N+Wn7y86t9zkwBtMRgWDbHOQMPRv+XcBpJXIKbS+KSkzKbDVEBk9m8Qh8XxhSDUWhjIBiVfUe4/jrEVHE9vIXGFoikLMf9IQyLgeOEkLDLs6ag=
+  file_glob: true
+  file: build/libs/*
+  skip_cleanup: true
+  on:
+    all_bracnhes: true
+    tags: true
+    repo: xebialabs-community/xlr-quickbuild-plugin
+  api-key:
+    secure: pmqAV096K+ads8gxPejfCOOwzELGD+8X80C6OLJ4Cd41TG6p1HDqOunJP7fVIos09OEBZmHb/AcUPMH+OqMq//fKofcblz8AaFBzgUM44a5OhysaZdhmWCBR+pKjYLVBa3vvsGVKsqV6gDdBqM6QwCXs0moWOXDuO8dLqxm3gH2rk/8v5Nu1Vo8aLoVXrDu1UXhsIKf9RnsFdp5YomQlMIlEDBK8BeG3MUv1qQYIewaxxFTqblNGn+MmOd8ae9y7CFbRGs37325p5qurfI/uyWWSF8eqoTVjIpKwAF+un60n2uSaferVU/FihXu+72t+Q30BnMfyJeDEerslRW1jObOJjHbxpwutkGWzTnmW5Sh6iX5jvpM3GtBwD+AZaesKHZ3B/jFEloSTTB3Vu2FPzMBDmFtJuKNwK2qwklrURjXdbRJ4fxmjRWqWr1kVAnNhOh52FbQT4iR6UpoVRkeiIoFAFr83f+zZF0Sk0vQQwDUuG6j4a8lWWEVtV6ISeb6Uo/xPwfZSBO/a21JdIiiFu5ehX37DXy+65ZjpGqTROuzO9XhBIiLiB5lEVfvNXVWf2cMudlhHEmgN5AC893Laovpe6j+/9qFz7CoXZsjScuKxpE51lFyVtG3gOXemmjee/QseBXvk8D8oSqqsTfZz5nqc6JCv5bmsF9hov5OcMBo=
+env:
+  global:
+    secure: sd952pXZfT/g0Ea5UCt75dGHusVczM0IkTysQOUKXelUEOzQzFCxHb1gM+MNAFxch6ijF3m1gPq75ILCFZysEBtLaMm0C4eWatAsmLuA4KtU9S5UvZQsLQargpCUEZ9w25NfnKhkpyUBnLvusysXdbZihlGoaDoAmAxQXs+XmJeJ/IEBDN7F6rkm3B+OAsTG/CmOqSI84BdnFQ/QpsaX72dNuuw/0T9Jinpx/M5xW0TPEpbDpY5xcp2PdQDu9BEvlo9H5tv5Cv3WsbWdFfu3S2ozs+S0tDDBI8CSEpVcvdK9RCqjLKy7A9NG3Th1GUeUaBksAZRIHy+1hlnX5WMQDRYk3o4+GcwpffHTfiD8Pj/lK5fyTp0fhxQTEU0nKh+lEiCq3ORbKVU9+bbjlq9B9fdHmN33YCbqMDhLIQDLQemzr22xxPUP9cYXchnS285sKODPWbWyKgOOrd6QGK2y5s/d5L7E+p7cQPyRiUEcLqO5y0V9AGET+CMaFF5Qod/D4RMqjnoAVS8Wws/BNieu9V6OO3N0nQel+qPOmgI2cNV0qx3QmUVvSYQNkRE4MV3WgNjRigPU9OojK+eOqStg0NcxzggTYCcHGdRf30Oj0+YmylaqkN/m3Lp1pf49JZetqw0MpxAVr0JGmC8Z0GEQTNHPY2rYltlL2fqUvqUySyo=
