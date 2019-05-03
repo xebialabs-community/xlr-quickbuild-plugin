@@ -1,0 +1,7 @@
+.gradle
+build
+temp
+h2
+.idea/*
+.DS_Store
+supervisord*
